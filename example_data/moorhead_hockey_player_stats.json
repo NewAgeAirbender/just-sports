@@ -1,0 +1,31 @@
+{
+  "_id": "672fe180077aa702d6580b57",
+  "created_at": "2024-11-09T22:26:08+00:00",
+  "locked": null,
+  "override_games": null,
+  "player_id": 74859341,
+  "stat_module_id": "4ec1dea70a11c10fdb000001",
+  "subseason_id": 930365,
+  "team_id": 9778331,
+  "updated_at": "2025-02-22T21:26:38+00:00",
+  "values": {
+    "hksgm": 31.0,
+    "hksgl": 18.0,
+    "hksast": 15.0,
+    "hkspts": 33.0,
+    "hkssog": 27.0,
+    "hksshtpct": 0.6666666666666666,
+    "hksppg": 3.0,
+    "hksshg": 1.0,
+    "hkspim": 28.0,
+    "hksfow": 3.0,
+    "hksfol": 1.0,
+    "hksbs": 0.0,
+    "hkspm": -2.0,
+    "hksgwg": 5.0,
+    "hksavgpts": 1.064516129032258,
+    "hksfgs": 4.0,
+    "hksppa": 4.0,
+    "hkssha": 1.0
+  }
+}
