@@ -10,14 +10,19 @@ import team64980 from "./data/sample_team_responses/team_64980_B.js";
 import team65020 from "./data/sample_team_responses/team_65020_R.js";
 import team65090 from "./data/sample_team_responses/team_65090_H.js";
 
+import team_instance_9762989 from "./data/sample_team_instance_responses/team_instance_9762989_E.js";
+
 const jeffsResolvers = {
   Query: {
     getGameFromId: (parent, args, content, info) => {
       return gameObject(args.id);
     },
     getTeamFromId: (parent, args, content, info) => {
-        return teamObject(args.id);
-      },
+      return teamObject(args.id);
+    },
+    getTeamInstanceFromId: (parent, args, content, info) => {
+      return teamInstanceObject(args.id);
+    },
   },
 };
 
@@ -66,41 +71,75 @@ const convertSEtoSV_game = (gameObjectSE) => {
   };
 };
 
-
 const teamObject = (id: string) => {
-    switch (id) {
-      case "64982":
-        return convertSEtoSV_team(team64982);
-        break;
-      case "64980":
-        return convertSEtoSV_team(team64980);
-        break;
-      case "65020":
-        return convertSEtoSV_team(team65020);
-        break;
-      case "65090":
-        return convertSEtoSV_team(team65090);
-        break;
-      default:
-        console.log("Found nothing for game id: " + id);
-    }
-    // By default we return no data and mock data will be filled in
-    return {};
+  switch (id) {
+    case "64982":
+      return convertSEtoSV_team(team64982);
+      break;
+    case "64980":
+      return convertSEtoSV_team(team64980);
+      break;
+    case "65020":
+      return convertSEtoSV_team(team65020);
+      break;
+    case "65090":
+      return convertSEtoSV_team(team65090);
+      break;
+    default:
+      console.log("Found nothing for team id: " + id);
+  }
+  // By default we return no data and mock data will be filled in
+  return {};
+};
+
+const convertSEtoSV_team = (teamObjectSE) => {
+  return {
+    id: teamObjectSE.id,
+    name: teamObjectSE.name,
+    gender: teamObjectSE.gender,
+    sportID: teamObjectSE.sport_id,
+    // season: teamObjectSE.current_subseason_ids[0],
+
+    // teamInstanceID: teamObjectSE.subseason_team_instance_mapping.team_instance_id,
+    //    where teamObjectSE.subseason_team_instance_mapping.subseason_id ==
+    //            teamObjectSE.current_subseason_ids[0]
   };
+};
 
-  const convertSEtoSV_team = (teamObjectSE) => {
-    return {
-      id: teamObjectSE.id,
-      name: teamObjectSE.name,
-      gender: teamObjectSE.gender,
-      sportID: teamObjectSE.sport_id,
-      // season: teamObjectSE.current_subseason_ids[0],
+const teamInstanceObject = (id: string) => {
+  switch (id) {
+    case "9762989":
+      return convertSEtoSV_team_instance(team_instance_9762989);
+      break;
+    default:
+      console.log("Found nothing for team instance id: " + id);
+  }
+  // By default we return no data and mock data will be filled in
+  return {};
+};
 
-      // teamInstanceID: teamObjectSE.subseason_team_instance_mapping.team_instance_id, 
-      //    where teamObjectSE.subseason_team_instance_mapping.subseason_id == 
-      //            teamObjectSE.current_subseason_ids[0]
+const convertSEtoSV_team_instance = (teamInstanceObjectSE) => {
+  return {
+    id: teamInstanceObjectSE.id,
+    name: teamInstanceObjectSE.name,
 
-    };
+    sportID: teamInstanceObjectSE.team.sport_id,
+
+    // We'll need to do something more sophisticated to have 
+    // a Class resolver that can map "Class 6A" onto a Class object
+    // and a Section resolver that can map "Section 3AAAAAA" onto a SportSection object
+    class: teamInstanceObjectSE.tag_list.find(tag => tag.includes("Class")),
+    section: teamInstanceObjectSE.tag_list.find(tag => tag.includes("Section")),
+
+    // Need to map male/female onto enum Gender BOYS/GIRLS
+    // gender: (teamInstanceObjectSE.gender == 'male_') ? 'BOYS' : null
+
+    // season: teamObjectSE.current_subseason_ids[0],
+    // teamInstanceID: teamObjectSE.subseason_team_instance_mapping.team_instance_id,
+    //    where teamObjectSE.subseason_team_instance_mapping.subseason_id ==
+    //            teamObjectSE.current_subseason_ids[0]
   };
-  
+};
+
+
 export default jeffsResolvers;

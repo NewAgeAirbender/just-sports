@@ -22,6 +22,7 @@ type Query {
   game: Event!
   getGameFromId(id: ID!): Event!
   getTeamFromId(id: ID!): Team!
+  getTeamInstanceFromId(id: ID!): Team!
 }
 
 union Organization =
