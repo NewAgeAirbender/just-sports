@@ -3,6 +3,8 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { addMocksToSchema } from "@graphql-tools/mock";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 
+import jeffsResolvers from "./jeffsResolvers.js";
+
 const typeDefs = `#graphql
 scalar DateTime
 
@@ -16,6 +18,11 @@ type Query {
   getSoccerStats: SoccerStats
   getVolleyballStats: VolleyballStats
   team: Team!
+  event: Event!
+  game: Event!
+  getGame(id: ID!): Event!
+  getTeam(id: ID!): Team!
+  getTeamInstance(id: ID!): Team!
 }
 
 union Organization =
@@ -146,6 +153,23 @@ enum GAME_TYPE {
 }
 
 interface SportingEventInterface {
+  id: ID!
+  date: DateTime!
+  teams: [Team!]!
+  location: String
+  homeTeam: Team
+  awayTeams: [Team!]!
+  sport: Sport!
+  gameType: GAME_TYPE
+  paywalled: Boolean
+  homeFinalScore: Int
+  awayFinalScore: Int
+  liveStream: LiveSteam
+
+  eventOrganizers: [Organization!]!
+}
+
+type Event implements SportingEventInterface {
   id: ID!
   date: DateTime!
   teams: [Team!]!
@@ -807,20 +831,24 @@ type GeneralStats {
 }
 `;
 
+const resolvers = {
+  Query: {
+    // getTeamsForSport: () => {
+    //     return
+    // }
+    getGame: (parent, args, content, info) => {
+      return { id: args.id };
+    },
+  },
+};
+
 // Just need to pass resolvers in with typeDefs when that's ready
-const server = new ApolloServer({
+const server = new ApolloServer({ // { typeDefs, resolvers }
   schema: addMocksToSchema({
-    schema: makeExecutableSchema({ typeDefs }),
+    schema: makeExecutableSchema({ typeDefs, resolvers: jeffsResolvers }),
+    preserveResolvers: true,
   }),
 });
-
-// const resolvers = {
-//     Query: {
-//         getTeamsForSport: () => {
-//             return
-//         }
-//     }
-// }
 
 const { url } = await startStandaloneServer(server, { listen: { port: 4000 } });
 
