@@ -20,9 +20,9 @@ type Query {
   team: Team!
   event: Event!
   game: Event!
-  getGameFromId(id: ID!): Event!
-  getTeamFromId(id: ID!): Team!
-  getTeamInstanceFromId(id: ID!): Team!
+  getGame(id: ID!): Event!
+  getTeam(id: ID!): Team!
+  getTeamInstance(id: ID!): Team!
 }
 
 union Organization =
@@ -836,8 +836,7 @@ const resolvers = {
     // getTeamsForSport: () => {
     //     return
     // }
-    getGameFromId: (parent, args, content, info) => {
-      // getGameFromId: () => {
+    getGame: (parent, args, content, info) => {
       return { id: args.id };
     },
   },

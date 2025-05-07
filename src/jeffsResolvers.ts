@@ -14,13 +14,13 @@ import team_instance_9762989 from "./data/sample_team_instance_responses/team_in
 
 const jeffsResolvers = {
   Query: {
-    getGameFromId: (parent, args, content, info) => {
+    getGame: (parent, args, content, info) => {
       return gameObject(args.id);
     },
-    getTeamFromId: (parent, args, content, info) => {
+    getTeam: (parent, args, content, info) => {
       return teamObject(args.id);
     },
-    getTeamInstanceFromId: (parent, args, content, info) => {
+    getTeamInstance: (parent, args, content, info) => {
       return teamInstanceObject(args.id);
     },
   },
