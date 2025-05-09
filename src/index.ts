@@ -857,7 +857,6 @@ type BasketballTeamStats implements TeamStats {
   gamesPlayed: Int
   record: RecordInterface!
   lastUpdated: DateTime
-  stats: BasketballStats
 }
 
 type VolleyballTeamStats implements TeamStats {
@@ -867,7 +866,6 @@ type VolleyballTeamStats implements TeamStats {
   gamesPlayed: Int
   record: RecordInterface!
   lastUpdated: DateTime
-  stats: VolleyballStats
 }
 `;
 
