@@ -16,6 +16,15 @@ type Query {
   getSoccerStats: SoccerStats
   getVolleyballStats: VolleyballStats
   team: Team!
+
+  # New team stats queries
+  getTeamStats(teamId: ID!): TeamStats
+  getBasketballTeamStats(teamId: ID!): BasketballTeamStats
+  getHockeyTeamStats(teamId: ID!): HockeyTeamStats
+  getLacrosseTeamStats(teamId: ID!): LacrosseTeamStats
+  getSoccerTeamStats(teamId: ID!): SoccerTeamStats
+  getVolleyballTeamStats(teamId: ID!): VolleyballTeamStats
+  getFootballTeamStats(teamId: ID!): FootballTeamStats
 }
 
 union Organization =
@@ -389,9 +398,24 @@ type MiscStats {
     technicalFouls: Int
 }
 
-type FootballTeamStats {
+# Team Stats Interface
+interface TeamStats {
+  teamId: ID!
+  team: Team
+  season: SportSeason!
+  gamesPlayed: Int
+  record: RecordInterface!
+  lastUpdated: DateTime
+}
+
+type FootballTeamStats implements TeamStats {
+    teamId: ID!
+    team: Team
+    season: SportSeason!
     gamesPlayed: Int
     totalYards: Int
+    record: RecordInterface!
+    lastUpdated: DateTime
 
     firstDown: Int
     thirdDownAttempted: Int
@@ -402,7 +426,7 @@ type FootballTeamStats {
     fourthDownPercent: Float
 
     timePosessed: Float
-    
+
     penalties: Int
     penaltyYards: Int
 }
@@ -539,8 +563,13 @@ type FootballKickingStats {
 
 union HockeyStats = HockeyTeamStats | HockeyGoalieStats | SkaterStats
 
-type HockeyTeamStats {
+type HockeyTeamStats implements TeamStats {
+    teamId: ID!
+    team: Team
+    season: SportSeason!
     gamesPlayed: Int
+    record: RecordInterface!
+    lastUpdated: DateTime
 
     goalsPerGame: Float
     goalsAgainstPerGame: Float
@@ -606,7 +635,14 @@ type SkaterStats {
 
 union LacrosseStats = LacrosseTeamStats | RunnerStats | LacrosseGoalieStats
 
-type LacrosseTeamStats {
+type LacrosseTeamStats implements TeamStats {
+    teamId: ID!
+    team: Team
+    season: SportSeason!
+    gamesPlayed: Int
+    record: RecordInterface!
+    lastUpdated: DateTime
+
     powerPlaysAttempted: Int
     powerPlayPercent: Float
     powerPlayMinutes: Float
@@ -683,7 +719,14 @@ type LacrosseGoalieStats {
 
 union SoccerStats = GoalkeeperStats | IndividualStats
 
-type SoccerTeamStats {
+type SoccerTeamStats implements TeamStats {
+    teamId: ID!
+    team: Team
+    season: SportSeason!
+    gamesPlayed: Int
+    record: RecordInterface!
+    lastUpdated: DateTime
+
     ballPossession: Int
 }
 
@@ -804,6 +847,25 @@ type ServiceReceptionStats {
 type GeneralStats {
     errors: Int
     setsPlayed: Int
+}
+
+# New team stats types
+type BasketballTeamStats implements TeamStats {
+  teamId: ID!
+  team: Team
+  season: SportSeason!
+  gamesPlayed: Int
+  record: RecordInterface!
+  lastUpdated: DateTime
+}
+
+type VolleyballTeamStats implements TeamStats {
+  teamId: ID!
+  team: Team
+  season: SportSeason!
+  gamesPlayed: Int
+  record: RecordInterface!
+  lastUpdated: DateTime
 }
 `;
 
