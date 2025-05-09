@@ -2,6 +2,7 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { addMocksToSchema } from "@graphql-tools/mock";
 import { makeExecutableSchema } from "@graphql-tools/schema";
+import resolvers from "./resolvers.js";
 
 const typeDefs = `#graphql
 scalar DateTime
@@ -16,6 +17,11 @@ type Query {
   getSoccerStats: SoccerStats
   getVolleyballStats: VolleyballStats
   team: Team!
+  getAthlete(id: ID): Athlete
+  teamAthlete: TeamAthlete!
+  footballPassingStats: FootballPassingStats
+  getTeamAthlete(id: ID): TeamAthlete
+  athlete: Athlete!
 }
 
 union Organization =
@@ -117,6 +123,8 @@ type TeamAthlete {
   jerseyNumber: String
   grade: Int
   season: SportSeason!
+  footballPassingStats: FootballPassingStats
+  footballStats: [FootballStats]
 }
 
 type Athlete {
@@ -126,6 +134,7 @@ type Athlete {
   middleName: String
   photo: String!
   nickNames: [String!]!
+  athleteOnTeams: [TeamAthlete]
 }
 
 type School {
@@ -406,6 +415,8 @@ type FootballTeamStats {
     penalties: Int
     penaltyYards: Int
 }
+
+union FootballStats = FootballPassingStats | FootballRushingStats | FootballReceivingStats
 
 type FootballPassingStats {
     gamesPlayed: Int
@@ -810,17 +821,11 @@ type GeneralStats {
 // Just need to pass resolvers in with typeDefs when that's ready
 const server = new ApolloServer({
   schema: addMocksToSchema({
-    schema: makeExecutableSchema({ typeDefs }),
+    schema: makeExecutableSchema({ typeDefs, resolvers }),
+    preserveResolvers: true,
   }),
 });
 
-// const resolvers = {
-//     Query: {
-//         getTeamsForSport: () => {
-//             return
-//         }
-//     }
-// }
 
 const { url } = await startStandaloneServer(server, { listen: { port: 4000 } });
 
