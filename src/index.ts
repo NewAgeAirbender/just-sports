@@ -84,6 +84,11 @@ type SportSeason {
   season: Season!
 }
 
+type Sponsor {
+  name: String!
+  logo: String!
+}
+
 # per season
 type Team {
   id: ID!
@@ -101,6 +106,9 @@ type Team {
   stateRanking: Int
   stribRanking: Int
   standings: Int
+  sponsor: Sponsor
+  logo: String!
+  abbreviation: String
 
   season: SportSeason!
 
@@ -124,8 +132,11 @@ type Athlete {
   firstName: String!
   lastName: String!
   middleName: String
+  sponsor: Sponsor
   photo: String!
   nickNames: [String!]!
+  # Backup on if there are multiple folks created that are actually the same
+  otherIdentifiers: [String]
 }
 
 type School {
@@ -133,11 +144,13 @@ type School {
   name: String!
   teams: [Team!]!
   url: String
+  sponsor: Sponsor
 }
 
 type Sport {
   id: ID!
   name: String!
+  sponsor: Sponsor
 }
 
 enum GAME_TYPE {
@@ -154,29 +167,21 @@ interface SportingEventInterface {
   awayTeams: [Team!]!
   sport: Sport!
   gameType: GAME_TYPE
-  paywalled: Boolean
   homeFinalScore: Int
   awayFinalScore: Int
-  liveStream: LiveSteam
+  status: EVENT_STATUS
+
+  # Not sure since set in Wordpress
+  paywalled: Boolean
+  livestream: Int
 
   eventOrganizers: [Organization!]!
 }
 
-enum LIVE_STREAM_STATUS {
+enum EVENT_STATUS {
   LIVE
   UPCOMING
   ENDED
-}
-
-type LiveSteam {
-  id: ID!
-  url: String!
-  headline: String!
-  description: String
-  startTime: DateTime!
-  expectedEndTime: DateTime
-  endTime: DateTime
-  status: LIVE_STREAM_STATUS
 }
 
 
@@ -458,8 +463,8 @@ type FootballReceivingStats {
 type FootballDefensiveStats {
     gamesPlayed: Int
 
-    soloTackle: Int
-    assistTackle: Int
+    soloTackles: Int
+    assistTackles: Int
     tacklesForLoss: Int
     totalTackles: Int
 
@@ -468,12 +473,12 @@ type FootballDefensiveStats {
     forcedFumble: Int
     fumbleTDReturn: Int
 
-    interception: Int
-    interceptionTDReturn: Int
+    interceptions: Int
+    interceptionsTDReturn: Int
 
     safties: Int
     blockedKicks: Int
-    blockedKickTDReturn: Int
+    blockedKicksTDReturn: Int
     
     passesDefended: Int
     totalDefensiveTD: Int
@@ -526,11 +531,11 @@ type FootballKickingStats {
     fiftiesPlusAttempted: Int
     fiftiesPlusMade: Int
 
-    fieldGoalsAttempts: Int
+    fieldGoalsAttempted: Int
     fieldGoalsMade: Int
     fieldGoalsPercent: Float
 
-    extraPointAttempts: Int
+    extraPointAttempted: Int
     extraPointMade: Int
     extraPointPercent: Float
 

@@ -1,0 +1,442 @@
+[
+    {
+        "id": "5006499a1d7edc294f00002c",
+        "key": "soccer_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 5,
+        "team_only": null,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "5006499a1d7edc294f00002d",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "5006499a1d7edc294f00002e",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "5006499a1d7edc294f00002f",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "5006499a1d7edc294f000030",
+                "key": "goals",
+                "abbrev": "G",
+                "name": "Goals",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "5006499a1d7edc294f000031",
+                "key": "sosgpg",
+                "abbrev": "GPG Avg",
+                "name": "Goals Per Game",
+                "formatter": "float_2",
+                "score_value": false
+            },
+            {
+                "id": "55380d03b0ccba0fde000001",
+                "key": "ycard",
+                "abbrev": "YC",
+                "name": "Yellow Cards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "55380d03b0ccba0fde000002",
+                "key": "rcard",
+                "abbrev": "RC",
+                "name": "Red Cards",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "5006499a1d7edc294f000002",
+        "key": "soccer_individual",
+        "short_name": "Individual",
+        "ngin_sport_id": 5,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "5006499a1d7edc294f000003",
+                "key": "soigp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000004",
+                "key": "soimin",
+                "abbrev": "MIN",
+                "name": "Minutes Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000005",
+                "key": "soig",
+                "abbrev": "G",
+                "name": "Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000006",
+                "key": "soia",
+                "abbrev": "A",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000007",
+                "key": "soipts",
+                "abbrev": "PTS",
+                "name": "Total Points",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000008",
+                "key": "soish",
+                "abbrev": "SH",
+                "name": "Shots",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000009",
+                "key": "soisog",
+                "abbrev": "SOG",
+                "name": "Shots on Goal",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000a",
+                "key": "soishp",
+                "abbrev": "SHOT%",
+                "name": "Shooting Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000b",
+                "key": "soicrn",
+                "abbrev": "CRN",
+                "name": "Corner Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000c",
+                "key": "soicrs",
+                "abbrev": "CRS",
+                "name": "Crosses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000d",
+                "key": "soifba",
+                "abbrev": "FBA",
+                "name": "Fast Break Attacks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000e",
+                "key": "soifc",
+                "abbrev": "FC",
+                "name": "Fouls Committed",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00000f",
+                "key": "soifs",
+                "abbrev": "FS",
+                "name": "Fouls Suffered",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000010",
+                "key": "soihdr",
+                "abbrev": "HDR",
+                "name": "Headers",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000011",
+                "key": "soilp",
+                "abbrev": "LP",
+                "name": "Long Passes",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000012",
+                "key": "soioffs",
+                "abbrev": "OFFS",
+                "name": "Offsides",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000013",
+                "key": "soifk",
+                "abbrev": "FK",
+                "name": "Free Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000014",
+                "key": "soidfk",
+                "abbrev": "DFK",
+                "name": "Direct Free Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000015",
+                "key": "soiifk",
+                "abbrev": "IFK",
+                "name": "Indirect Free Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000016",
+                "key": "soifkg",
+                "abbrev": "FKG",
+                "name": "Free Kick Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000017",
+                "key": "soipk",
+                "abbrev": "PK",
+                "name": "Penalty Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000018",
+                "key": "soipkg",
+                "abbrev": "PKG",
+                "name": "Penalty Kick Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000019",
+                "key": "soitc",
+                "abbrev": "TC",
+                "name": "Tackles Committed",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00001a",
+                "key": "soits",
+                "abbrev": "TS",
+                "name": "Tackles Suffered",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00001b",
+                "key": "soiyc",
+                "abbrev": "YC",
+                "name": "Yellow Cards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "555e4798b0ccba4f60000001",
+                "key": "soiycst",
+                "abbrev": "YCST",
+                "name": "Yellow Cards Standings",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00001c",
+                "key": "soirc",
+                "abbrev": "RC",
+                "name": "Red Cards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "555e4798b0ccba4f60000002",
+                "key": "soircst",
+                "abbrev": "RCST",
+                "name": "Red Cards Standings",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00001d",
+                "key": "soiog",
+                "abbrev": "OG",
+                "name": "Own Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00001e",
+                "key": "soigwg",
+                "abbrev": "GWG",
+                "name": "Game Winning Goals",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "5006499a1d7edc294f00001f",
+        "key": "soccer_goalkeeper",
+        "short_name": "Goalkeeper",
+        "ngin_sport_id": 5,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "5006499a1d7edc294f000020",
+                "key": "soggp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000021",
+                "key": "sogmin",
+                "abbrev": "MIN",
+                "name": "Minutes Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000022",
+                "key": "sogga",
+                "abbrev": "GA",
+                "name": "Goals against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000023",
+                "key": "sogsv",
+                "abbrev": "SV",
+                "name": "Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000024",
+                "key": "sogpksv",
+                "abbrev": "PKSV",
+                "name": "Penalty Kick Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000025",
+                "key": "sogfksv",
+                "abbrev": "FKSV",
+                "name": "Free Kick Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000026",
+                "key": "sogcksv",
+                "abbrev": "CKSV",
+                "name": "Corner Kick Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000027",
+                "key": "sogyc",
+                "abbrev": "YC",
+                "name": "Yellow Cards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000028",
+                "key": "sogrc",
+                "abbrev": "RC",
+                "name": "Red Cards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f000029",
+                "key": "sogfs",
+                "abbrev": "FS",
+                "name": "Fouls Suffered",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00002a",
+                "key": "sogsvp",
+                "abbrev": "SV%",
+                "name": "Save Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "5006499a1d7edc294f00002b",
+                "key": "soggaa",
+                "abbrev": "GAA",
+                "name": "Goals Against Average",
+                "formatter": "float_2",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "5006499a1d7edc294f000032",
+        "key": "soccer_team_stats",
+        "short_name": "Team",
+        "ngin_sport_id": 5,
+        "team_only": true,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "5006499a1d7edc294f000033",
+                "key": "sotbp",
+                "abbrev": "BP%",
+                "name": "Ball Possession %",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]

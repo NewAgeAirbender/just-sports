@@ -1,0 +1,458 @@
+[
+    {
+        "id": "4ec1dea70a11c10fdb000028",
+        "key": "ice_hockey_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 1,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4ec1dea70a11c10fdb000029",
+                "key": "pts",
+                "abbrev": "Pts",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00002a",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00002b",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00002c",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00002d",
+                "key": "overtime_losses",
+                "abbrev": "OTL",
+                "name": "Overtime Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "5862d1274a397b0e1c000001",
+                "key": "shootout_goals",
+                "abbrev": "SOGOAL",
+                "name": "Shooutout Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5862d1274a397b0e1c000002",
+                "key": "shootout_attempts",
+                "abbrev": "SOATT",
+                "name": "Shooutout Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "58823bcf4a397b6431000001",
+                "key": "shootout_pts",
+                "abbrev": "SOPTS",
+                "name": "Shooutout Points",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ec1dea70a11c10fdb000001",
+        "key": "ice_hockey_skater",
+        "short_name": "Skater",
+        "ngin_sport_id": 1,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ec1dea70a11c10fdb000002",
+                "key": "hksgm",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000003",
+                "key": "hksgl",
+                "abbrev": "G",
+                "name": "Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000004",
+                "key": "hksast",
+                "abbrev": "A",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000005",
+                "key": "hkspts",
+                "abbrev": "PTS",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000006",
+                "key": "hkssog",
+                "abbrev": "SOG",
+                "name": "Shots on Goal",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000007",
+                "key": "hksshtpct",
+                "abbrev": "SOG %",
+                "name": "Shooting Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000008",
+                "key": "hksppg",
+                "abbrev": "PPG",
+                "name": "Power Play Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000009",
+                "key": "hksshg",
+                "abbrev": "SH",
+                "name": "Short Handed Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000a",
+                "key": "hkspim",
+                "abbrev": "PIM",
+                "name": "Penalty Minutes",
+                "formatter": "integer_or_float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000b",
+                "key": "hksfow",
+                "abbrev": "FOW",
+                "name": "Faceoffs Won",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000c",
+                "key": "hksfol",
+                "abbrev": "FOL",
+                "name": "Faceoffs Lost",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000d",
+                "key": "hksto",
+                "abbrev": "TO",
+                "name": "Turnovers",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000e",
+                "key": "hkshit",
+                "abbrev": "HIT",
+                "name": "Hits",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00000f",
+                "key": "hksbs",
+                "abbrev": "BS",
+                "name": "Blocked Shots",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000010",
+                "key": "hkspm",
+                "abbrev": "+ / -",
+                "name": "Plus / Minus",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000011",
+                "key": "hksmvp",
+                "abbrev": "MVP",
+                "name": "Player of the Game Award",
+                "formatter": "MVP",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000012",
+                "key": "hksgwg",
+                "abbrev": "GW",
+                "name": "Game Winning Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000013",
+                "key": "hksavgpts",
+                "abbrev": "AVG PTS",
+                "name": "Points Per Game",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "506f2e3a1d7edc38f9000001",
+                "key": "hksfgs",
+                "abbrev": "FG",
+                "name": "First Goal",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "507486271d7edc7733000001",
+                "key": "hksppa",
+                "abbrev": "PPA",
+                "name": "Power Play Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "507486271d7edc7733000002",
+                "key": "hkssha",
+                "abbrev": "SHA",
+                "name": "Short Handed Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "520d2328b13e152e82000002",
+                "key": "hkshtwon",
+                "abbrev": "SW",
+                "name": "Shootout Won",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "526ff3e8b13e151f1d000001",
+                "key": "hkspen",
+                "abbrev": "PEN",
+                "name": "Penalties",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ec1dea70a11c10fdb000014",
+        "key": "ice_hockey_goalie",
+        "short_name": "Goalie",
+        "ngin_sport_id": 1,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ec1dea70a11c10fdb000015",
+                "key": "hkggm",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000016",
+                "key": "hkgwin",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000017",
+                "key": "hkgloss",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000018",
+                "key": "hkgtie",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000019",
+                "key": "hkggla",
+                "abbrev": "GA",
+                "name": "Goals Against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001a",
+                "key": "hkgmin",
+                "abbrev": "MIN",
+                "name": "Minutes",
+                "formatter": "minutes_and_seconds",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001b",
+                "key": "hkggaa",
+                "abbrev": "GAA",
+                "name": "Goals Against Average",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001c",
+                "key": "hkgsot",
+                "abbrev": "SO",
+                "name": "Shut Outs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001d",
+                "key": "hkgsv",
+                "abbrev": "SV",
+                "name": "Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001e",
+                "key": "hkgspct",
+                "abbrev": "SV %",
+                "name": "Save Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb00001f",
+                "key": "hkgmvp",
+                "abbrev": "MVP",
+                "name": "Player of the Game Award",
+                "formatter": "MVP",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000020",
+                "key": "hkgsog",
+                "abbrev": "SOG",
+                "name": "Shots on Goal",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "506e008b1d7edc047e000001",
+                "key": "hkgsol",
+                "abbrev": "SOL",
+                "name": "Shootout Loss",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ec1dea70a11c10fdb000021",
+        "key": "ice_hockey_team_stats",
+        "short_name": "Team",
+        "ngin_sport_id": 1,
+        "team_only": true,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ec1dea70a11c10fdb000022",
+                "key": "hktgpg",
+                "abbrev": "GPG",
+                "name": "Goals Per Game Avg",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000023",
+                "key": "hktppa",
+                "abbrev": "PP",
+                "name": "Power Plays",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000024",
+                "key": "hktpppct",
+                "abbrev": "PP %",
+                "name": "Power Play Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000025",
+                "key": "hktpkl",
+                "abbrev": "PK",
+                "name": "Penalty Kills",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000026",
+                "key": "hktpkga",
+                "abbrev": "PPGA",
+                "name": "Power Play Goals Allowed",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ec1dea70a11c10fdb000027",
+                "key": "hktpkpct",
+                "abbrev": "PK %",
+                "name": "Penalty Kill Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4ec6e2a0c0759f5bd0000001",
+                "key": "hktgaa",
+                "abbrev": "GAPG",
+                "name": "Goals Against Per Game",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4fa43ba31d7edc0d0a000001",
+                "key": "hktgms",
+                "abbrev": "GP",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]
