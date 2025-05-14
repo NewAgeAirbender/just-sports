@@ -1,0 +1,356 @@
+[
+    {
+        "id": "4ff3d0c61d7edc4b10000027",
+        "key": "basketball_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 7,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4ff3d0c61d7edc4b10000028",
+                "key": "pts",
+                "abbrev": "Pts",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000029",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000002a",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000002b",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ff3d0c61d7edc4b10000002",
+        "key": "basketball_player",
+        "short_name": "Player",
+        "ngin_sport_id": 7,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ff3d0c61d7edc4b10000003",
+                "key": "bkpgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000004",
+                "key": "bkpgs",
+                "abbrev": "GS",
+                "name": "Games Started",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000005",
+                "key": "bkpmin",
+                "abbrev": "MIN",
+                "name": "Minutes Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000006",
+                "key": "bkpavemin",
+                "abbrev": "MPG",
+                "name": "Minutes Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ff3d0c61d7edc4b10000007",
+        "key": "basketball_scoring",
+        "short_name": "Scoring",
+        "ngin_sport_id": 7,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ff3d0c61d7edc4b10000008",
+                "key": "bksgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000009",
+                "key": "bksppg",
+                "abbrev": "PPG",
+                "name": "Points Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000a",
+                "key": "bksfgm",
+                "abbrev": "FGM",
+                "name": "Field Goals Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000b",
+                "key": "bksfga",
+                "abbrev": "FGA",
+                "name": "Field Goals Attempted",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000c",
+                "key": "bksfgpct",
+                "abbrev": "FG%",
+                "name": "Field Goal Percent",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000d",
+                "key": "bksftm",
+                "abbrev": "FTM",
+                "name": "Free Throws Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000e",
+                "key": "bksfta",
+                "abbrev": "FTA",
+                "name": "Free Throws Attempted",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000000f",
+                "key": "bksftpct",
+                "abbrev": "FT%",
+                "name": "Freethrow Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000010",
+                "key": "bks3pm",
+                "abbrev": "3PM",
+                "name": "Three Point Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000011",
+                "key": "bks3pa",
+                "abbrev": "3PA",
+                "name": "Three Point Attempted",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000012",
+                "key": "bks3ppct",
+                "abbrev": "3P%",
+                "name": "Three Point Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000013",
+                "key": "bkspts",
+                "abbrev": "PTS",
+                "name": "Total Points",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000014",
+                "key": "bksptshi",
+                "abbrev": "High",
+                "name": "Game High Points",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ff3d0c61d7edc4b10000015",
+        "key": "basketball_rebounds",
+        "short_name": "Rebounds",
+        "ngin_sport_id": 7,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ff3d0c61d7edc4b10000016",
+                "key": "bkrgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000017",
+                "key": "bkrrpg",
+                "abbrev": "RPG",
+                "name": "Rebounds Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000018",
+                "key": "bkrorb",
+                "abbrev": "OFF",
+                "name": "Offensive Rebounds",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000019",
+                "key": "bkrdrb",
+                "abbrev": "DEF",
+                "name": "Defensive Rebounds",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000001a",
+                "key": "bkrreb",
+                "abbrev": "REB",
+                "name": "Total Rebounds",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4ff3d0c61d7edc4b1000001b",
+        "key": "basketball_misc",
+        "short_name": "Misc",
+        "ngin_sport_id": 7,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4ff3d0c61d7edc4b1000001c",
+                "key": "bkmgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000001d",
+                "key": "bkmast",
+                "abbrev": "AST",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000001e",
+                "key": "bkmapg",
+                "abbrev": "APG",
+                "name": "Assists Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b1000001f",
+                "key": "bkmto",
+                "abbrev": "TO",
+                "name": "Turnovers",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000020",
+                "key": "bkmtopg",
+                "abbrev": "TOPG",
+                "name": "Turnovers Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000021",
+                "key": "bkmstl",
+                "abbrev": "STL",
+                "name": "Steals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000022",
+                "key": "bkmstlpg",
+                "abbrev": "SPG",
+                "name": "Steals Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000023",
+                "key": "bkmblk",
+                "abbrev": "BLK",
+                "name": "Blocks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000024",
+                "key": "bkmblkpg",
+                "abbrev": "BLKPG",
+                "name": "Blocks Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000025",
+                "key": "bkmpf",
+                "abbrev": "PF",
+                "name": "Fouls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4ff3d0c61d7edc4b10000026",
+                "key": "bkmpfpg",
+                "abbrev": "PFPG",
+                "name": "Average Fouls Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000007",
+                "key": "bkmtf",
+                "abbrev": "TF",
+                "name": "Technical Fouls",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]

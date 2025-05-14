@@ -1,0 +1,506 @@
+[
+    {
+        "id": "4eee7e8ca71a0b09d0000030",
+        "key": "lacrosse_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 3,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4eee7e8ca71a0b09d0000031",
+                "key": "pts",
+                "abbrev": "Pts",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000032",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000033",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000034",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": false
+            }
+        ]
+    },
+    {
+        "id": "4eee7e8ca71a0b09d0000002",
+        "key": "lacrosse_individual",
+        "short_name": "Runner",
+        "ngin_sport_id": 3,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4eee7e8ca71a0b09d0000003",
+                "key": "lxigp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000004",
+                "key": "lxigl",
+                "abbrev": "G",
+                "name": "Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000005",
+                "key": "lxitpgl",
+                "abbrev": "2PG",
+                "name": "Two Point Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000006",
+                "key": "lxiast",
+                "abbrev": "A",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000007",
+                "key": "lxipts",
+                "abbrev": "PTS",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000008",
+                "key": "lxipim",
+                "abbrev": "PIM",
+                "name": "Penalty Minutes",
+                "formatter": "integer_or_float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000009",
+                "key": "lxiinf",
+                "abbrev": "INF",
+                "name": "Penalties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000a",
+                "key": "lxippg",
+                "abbrev": "PPG",
+                "name": "Power Play Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000b",
+                "key": "lxishg",
+                "abbrev": "SHG",
+                "name": "Short Handed Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000c",
+                "key": "lxigwg",
+                "abbrev": "GW",
+                "name": "Game Winning Goals",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000d",
+                "key": "lxipggl",
+                "abbrev": "G/GP",
+                "name": "Avg Goals Per Game",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000e",
+                "key": "lxiavepts",
+                "abbrev": "PTS/GP",
+                "name": "Avg Points Per Game",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000000f",
+                "key": "lxipgpim",
+                "abbrev": "PIM/GP",
+                "name": "Avg Penalty Minutes Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000010",
+                "key": "lxitsa",
+                "abbrev": "S",
+                "name": "Total Shots Attempted",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000011",
+                "key": "lxisog",
+                "abbrev": "SOG",
+                "name": "Shots on Goal",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000012",
+                "key": "lxisoff",
+                "abbrev": "SOFF",
+                "name": "Shots Off-Target",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000013",
+                "key": "lxishpct",
+                "abbrev": "SHOT%",
+                "name": "Shooting Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000014",
+                "key": "lxisogpct",
+                "abbrev": "SOG%",
+                "name": "Percentage of Shots On Goal",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000015",
+                "key": "lxipgsog",
+                "abbrev": "SOG/GP",
+                "name": "Avg Shots On Goal Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000016",
+                "key": "lxigb",
+                "abbrev": "GB",
+                "name": "Ground Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000017",
+                "key": "lxilb",
+                "abbrev": "LB",
+                "name": "Loose Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000018",
+                "key": "lxito",
+                "abbrev": "TO",
+                "name": "Turnovers",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000019",
+                "key": "lxifto",
+                "abbrev": "FT",
+                "name": "Forced Turnovers",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001a",
+                "key": "lxita",
+                "abbrev": "TA",
+                "name": "Take Aways",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001b",
+                "key": "lxifo",
+                "abbrev": "FO",
+                "name": "Faceoffs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001c",
+                "key": "lxifow",
+                "abbrev": "FOW",
+                "name": "Faceoffs Won",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001d",
+                "key": "lxifol",
+                "abbrev": "FOL",
+                "name": "Faceoffs Lost",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001e",
+                "key": "lxifopct",
+                "abbrev": "FO%",
+                "name": "Faceoff Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000001f",
+                "key": "lximvp",
+                "abbrev": "MVP",
+                "name": "Player of the Game Award",
+                "formatter": "MVP",
+                "score_value": null
+            },
+            {
+                "id": "4f5f8c64c0759f1101000002",
+                "key": "lxidc",
+                "abbrev": "DC",
+                "name": "Draw Controls",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4eee7e8ca71a0b09d0000020",
+        "key": "lacrosse_goalie",
+        "short_name": "Goaltender",
+        "ngin_sport_id": 3,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4eee7e8ca71a0b09d0000021",
+                "key": "lxggm",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000022",
+                "key": "lxgmin",
+                "abbrev": "MIN",
+                "name": "Minutes Played",
+                "formatter": "minutes_and_seconds",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000023",
+                "key": "lxgwin",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000024",
+                "key": "lxgloss",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000025",
+                "key": "lxgtie",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000026",
+                "key": "lxgsog",
+                "abbrev": "SOG",
+                "name": "Shots on Goal Against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000027",
+                "key": "lxggla",
+                "abbrev": "GA",
+                "name": "Goals Against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000028",
+                "key": "lxgtpgla",
+                "abbrev": "2GA",
+                "name": "Two Point Goals Against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000029",
+                "key": "lxggaa",
+                "abbrev": "GAA",
+                "name": "Goals Against Average",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002a",
+                "key": "lxgsv",
+                "abbrev": "SV",
+                "name": "Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002b",
+                "key": "lxgspct",
+                "abbrev": "SV%",
+                "name": "Save Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002c",
+                "key": "lxggb",
+                "abbrev": "GB",
+                "name": "Groundballs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002d",
+                "key": "lxglb",
+                "abbrev": "LB",
+                "name": "Looseballs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002e",
+                "key": "lxgsho",
+                "abbrev": "SO",
+                "name": "Shut Outs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000002f",
+                "key": "lxgmvp",
+                "abbrev": "MVP",
+                "name": "Player of the Game Award",
+                "formatter": "MVP",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4eee7e8ca71a0b09d0000035",
+        "key": "lacrosse_team_stats",
+        "short_name": "Team",
+        "ngin_sport_id": 3,
+        "team_only": true,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4eee7e8ca71a0b09d0000036",
+                "key": "lxtppa",
+                "abbrev": "PP",
+                "name": "Power Plays Attempted",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000037",
+                "key": "lxtpppct",
+                "abbrev": "PP%",
+                "name": "Power Play Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000038",
+                "key": "lxtppm",
+                "abbrev": "PPM",
+                "name": "Power Play Minutes",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d0000039",
+                "key": "lxtpkl",
+                "abbrev": "PK",
+                "name": "Penalty Kills",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000003a",
+                "key": "lxtpkga",
+                "abbrev": "PKGA",
+                "name": "Penalty Kill Goals Allowed",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eee7e8ca71a0b09d000003b",
+                "key": "lxtpkpct",
+                "abbrev": "PK%",
+                "name": "Penalty Kill Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4f5f8c64c0759f1101000003",
+                "key": "lxtclr",
+                "abbrev": "C",
+                "name": "Clears",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f5f8c64c0759f1101000004",
+                "key": "lxtfclr",
+                "abbrev": "FC",
+                "name": "Failed Clears",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f5f8c64c0759f1101000005",
+                "key": "lxtride",
+                "abbrev": "R",
+                "name": "Rides",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]

@@ -1,0 +1,612 @@
+[
+    {
+        "id": "4f6c17dd302ecd4c0f00003e",
+        "key": "baseball_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 4,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4f6c17dd302ecd4c0f00003f",
+                "key": "runs",
+                "abbrev": "Runs",
+                "name": "Runs",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000040",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000041",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000042",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": false
+            }
+        ]
+    },
+    {
+        "id": "4f6c17dd302ecd4c0f000002",
+        "key": "baseball_batter",
+        "short_name": "Batter",
+        "ngin_sport_id": 4,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4f6c17dd302ecd4c0f000003",
+                "key": "bsbgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000004",
+                "key": "bsbab",
+                "abbrev": "AB",
+                "name": "At Bats",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000005",
+                "key": "bsbrun",
+                "abbrev": "R",
+                "name": "Runs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000006",
+                "key": "bsbhit",
+                "abbrev": "H",
+                "name": "Hits",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000007",
+                "key": "bsb1b",
+                "abbrev": "1B",
+                "name": "Singles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000008",
+                "key": "bsb2b",
+                "abbrev": "2B",
+                "name": "Doubles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000009",
+                "key": "bsb3b",
+                "abbrev": "3B",
+                "name": "Triples",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000a",
+                "key": "bsbhr",
+                "abbrev": "HR",
+                "name": "Home Runs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000b",
+                "key": "bsbtb",
+                "abbrev": "TB",
+                "name": "Total Bases",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000c",
+                "key": "bsbbb",
+                "abbrev": "BB",
+                "name": "Base on Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000d",
+                "key": "bsbrbi",
+                "abbrev": "RBI",
+                "name": "Runs Batted In",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000e",
+                "key": "bsbhbp",
+                "abbrev": "HBP",
+                "name": "Hit By Pitch",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00000f",
+                "key": "bsbso",
+                "abbrev": "SO",
+                "name": "Strikeouts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000010",
+                "key": "bsbsb",
+                "abbrev": "SB",
+                "name": "Stolen Bases",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000011",
+                "key": "bsbcs",
+                "abbrev": "CS",
+                "name": "Caught Stealing",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000012",
+                "key": "bsbgdp",
+                "abbrev": "GDP",
+                "name": "Ground Into Double Play",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000013",
+                "key": "bsbavg",
+                "abbrev": "AVG",
+                "name": "Batting Average",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000014",
+                "key": "bsbobp",
+                "abbrev": "OBP",
+                "name": "On-Base Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000015",
+                "key": "bsbops",
+                "abbrev": "OPS",
+                "name": "On-Base Plus Slugging",
+                "formatter": "float_3",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000016",
+                "key": "bsbslg",
+                "abbrev": "SLG",
+                "name": "Slugging Percentage",
+                "formatter": "float_or_decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000017",
+                "key": "bsbsac",
+                "abbrev": "SF",
+                "name": "Sacrifice Fly",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000018",
+                "key": "bsbpa",
+                "abbrev": "PA",
+                "name": "Plate Appearances",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4fa1698c1d7edc2c48000004",
+                "key": "bsbsach",
+                "abbrev": "SAC",
+                "name": "Sacrifice Hit",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4fa1698c1d7edc2c48000008",
+                "key": "bsbibb",
+                "abbrev": "IBB",
+                "name": "Intentional Base on Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "552e8823b0ccba39b8000001",
+                "key": "bsbord",
+                "abbrev": "ORD",
+                "name": "Batting Order",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "552e8823b0ccba39b8000002",
+                "key": "bsbph",
+                "abbrev": "PH",
+                "name": "Pinch Hitter",
+                "formatter": "boolean",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4f6c17dd302ecd4c0f000019",
+        "key": "baseball_pitcher",
+        "short_name": "Pitcher",
+        "ngin_sport_id": 4,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4f6c17dd302ecd4c0f00001a",
+                "key": "bspgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00001b",
+                "key": "bspwin",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00001c",
+                "key": "bsploss",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00001d",
+                "key": "bspsv",
+                "abbrev": "SV",
+                "name": "Saves",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00001e",
+                "key": "bspsvo",
+                "abbrev": "SVO",
+                "name": "Save Opportunities",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00001f",
+                "key": "bspsho",
+                "abbrev": "SHO",
+                "name": "Shutouts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000020",
+                "key": "bspip",
+                "abbrev": "IP",
+                "name": "Innings Pitched",
+                "formatter": "IP",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000021",
+                "key": "bsphit",
+                "abbrev": "H",
+                "name": "Hits",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000022",
+                "key": "bsprun",
+                "abbrev": "R",
+                "name": "Runs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000023",
+                "key": "bsper",
+                "abbrev": "ER",
+                "name": "Earned Runs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000024",
+                "key": "bspera",
+                "abbrev": "ERA",
+                "name": "Earned Run Average",
+                "formatter": "float_2",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000025",
+                "key": "bsphr",
+                "abbrev": "HR",
+                "name": "Home Runs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000026",
+                "key": "bspbb",
+                "abbrev": "BB",
+                "name": "Base on Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000027",
+                "key": "bspso",
+                "abbrev": "SO",
+                "name": "Strikeouts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000028",
+                "key": "bspqs",
+                "abbrev": "QS",
+                "name": "Quality Starts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000029",
+                "key": "bspgs",
+                "abbrev": "GS",
+                "name": "Games Started",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00002a",
+                "key": "bspcg",
+                "abbrev": "CG",
+                "name": "Complete Games",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00002b",
+                "key": "bsphbp",
+                "abbrev": "HBP",
+                "name": "Hit By Pitch",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00002c",
+                "key": "bsppc",
+                "abbrev": "PC",
+                "name": "Pitch Count",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00002d",
+                "key": "bspwp",
+                "abbrev": "WP",
+                "name": "Wild Pitch",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4fa1698c1d7edc2c48000001",
+                "key": "bspstrk",
+                "abbrev": "S",
+                "name": "Strikes Thrown",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4fa1698c1d7edc2c48000002",
+                "key": "bspbll",
+                "abbrev": "B",
+                "name": "Balls Thrown",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4fa1698c1d7edc2c48000006",
+                "key": "bspibb",
+                "abbrev": "IBB",
+                "name": "Intentional Base on Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da00000e",
+                "key": "bspab",
+                "abbrev": "AB",
+                "name": "At Bats",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da00000f",
+                "key": "bspbaa",
+                "abbrev": "BAA",
+                "name": "Batting Average Against",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000010",
+                "key": "bspwhip",
+                "abbrev": "WHIP",
+                "name": "Walks & Hits Per Inning",
+                "formatter": "float_2",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4f6c17dd302ecd4c0f00002e",
+        "key": "baseball_fielder",
+        "short_name": "Fielder",
+        "ngin_sport_id": 4,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4f6c17dd302ecd4c0f00002f",
+                "key": "bsfgp",
+                "abbrev": "GP",
+                "name": "Games Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000030",
+                "key": "bsfip",
+                "abbrev": "IP",
+                "name": "Innings Played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000031",
+                "key": "bsftc",
+                "abbrev": "TC",
+                "name": "Total Chances",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000032",
+                "key": "bsfpo",
+                "abbrev": "PO",
+                "name": "Putouts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000033",
+                "key": "bsfast",
+                "abbrev": "A",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000034",
+                "key": "bsferr",
+                "abbrev": "E",
+                "name": "Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000035",
+                "key": "bsfdp",
+                "abbrev": "DP",
+                "name": "Double Plays",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000036",
+                "key": "bsfgs",
+                "abbrev": "GS",
+                "name": "Games Started",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000037",
+                "key": "bsffp",
+                "abbrev": "FP",
+                "name": "Fielding Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f000038",
+                "key": "bsfrf",
+                "abbrev": "RF",
+                "name": "Range Factor",
+                "formatter": "float_2",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4f6c17dd302ecd4c0f000039",
+        "key": "baseball_catcher",
+        "short_name": "Catcher",
+        "ngin_sport_id": 4,
+        "team_only": null,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4f6c17dd302ecd4c0f00003a",
+                "key": "bscpb",
+                "abbrev": "PB",
+                "name": "Passed Balls",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00003b",
+                "key": "bscsba",
+                "abbrev": "SBA",
+                "name": "Stolen Bases Against",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00003c",
+                "key": "bsccs",
+                "abbrev": "CS",
+                "name": "Caught Stealing",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4f6c17dd302ecd4c0f00003d",
+                "key": "bsccsp",
+                "abbrev": "CSP",
+                "name": "Caught Stealing Percentage",
+                "formatter": "float_2",
+                "score_value": null
+            }
+        ]
+    }
+]

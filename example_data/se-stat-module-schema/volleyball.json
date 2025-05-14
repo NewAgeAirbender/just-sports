@@ -1,0 +1,306 @@
+[
+    {
+        "id": "4e4d7931c0759f7c2b00001c",
+        "key": "volleyball_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 12,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b00001d",
+                "key": "pts",
+                "abbrev": "Pts",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4e4d7931c0759f7c2b00001e",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4e4d7931c0759f7c2b00001f",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000020",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": false
+            },
+            {
+                "id": "50901c261d7edc4f36000001",
+                "key": "sets",
+                "abbrev": "Sets",
+                "name": "Sets",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b000001",
+        "key": "volleyball_attack",
+        "short_name": "Attack",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b000002",
+                "key": "atkkill",
+                "abbrev": "K",
+                "name": "Kills",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000003",
+                "key": "atkerr",
+                "abbrev": "E",
+                "name": "Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000004",
+                "key": "atkatt",
+                "abbrev": "TA",
+                "name": "Total Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000005",
+                "key": "atkpct",
+                "abbrev": "PCT",
+                "name": "Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000006",
+                "key": "per_set_kills",
+                "abbrev": "K/S",
+                "name": "Kills/Set",
+                "formatter": "float_1",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b000007",
+        "key": "volleyball_set",
+        "short_name": "Set",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b000008",
+                "key": "setast",
+                "abbrev": "A",
+                "name": "Assists",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000009",
+                "key": "setaps",
+                "abbrev": "A/S",
+                "name": "Assists/Set",
+                "formatter": "float_1",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b00000a",
+        "key": "volleyball_serves",
+        "short_name": "Serves",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b00000b",
+                "key": "srvace",
+                "abbrev": "SA",
+                "name": "Service Aces",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b00000c",
+                "key": "srverr",
+                "abbrev": "SE",
+                "name": "Service Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b00000d",
+                "key": "srvaps",
+                "abbrev": "SA/S",
+                "name": "Aces/Set",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000004",
+                "key": "srvatt",
+                "abbrev": "SRV",
+                "name": "Service Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000009",
+                "key": "srvpct",
+                "abbrev": "PCT",
+                "name": "Service Percentage",
+                "formatter": "decimal_3",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b00000e",
+        "key": "volleyball_defense",
+        "short_name": "Defense",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b00000f",
+                "key": "defdig",
+                "abbrev": "D",
+                "name": "Digs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000010",
+                "key": "defdps",
+                "abbrev": "D/S",
+                "name": "Digs/Set",
+                "formatter": "float_1",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b000011",
+        "key": "volleyball_blocks",
+        "short_name": "Blocks",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b000012",
+                "key": "blksolo",
+                "abbrev": "BS",
+                "name": "Solo Blocks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000013",
+                "key": "blkast",
+                "abbrev": "BA",
+                "name": "Assist Blocks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000014",
+                "key": "blkerr",
+                "abbrev": "BE",
+                "name": "Block Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000015",
+                "key": "blktot",
+                "abbrev": "BT",
+                "name": "Total Blocks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b000016",
+                "key": "blkbps",
+                "abbrev": "B/S",
+                "name": "Blocks/Set",
+                "formatter": "float_1",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b000017",
+        "key": "volleyball_service_reception",
+        "short_name": "Service Reception",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b000018",
+                "key": "srerr",
+                "abbrev": "RE",
+                "name": "Receiving Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000005",
+                "key": "srrec",
+                "abbrev": "SR",
+                "name": "Service Receptions",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e4d7931c0759f7c2b000019",
+        "key": "volleyball_general",
+        "short_name": "General",
+        "ngin_sport_id": 12,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e4d7931c0759f7c2b00001a",
+                "key": "genbhe",
+                "abbrev": "BHE",
+                "name": "Ball Handling Errors",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e4d7931c0759f7c2b00001b",
+                "key": "gensets",
+                "abbrev": "SP",
+                "name": "Sets Played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]

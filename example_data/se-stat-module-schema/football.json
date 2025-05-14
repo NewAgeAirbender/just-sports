@@ -1,0 +1,902 @@
+[
+    {
+        "id": "4e3a0df30dc38523a6000039",
+        "key": "football_team_scoring",
+        "short_name": "Team Record",
+        "ngin_sport_id": 11,
+        "team_only": true,
+        "scoring_module": true,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a600003a",
+                "key": "pts",
+                "abbrev": "Pts",
+                "name": "Points",
+                "formatter": "integer",
+                "score_value": true
+            },
+            {
+                "id": "4e3a0ede0dc3852443000002",
+                "key": "wins",
+                "abbrev": "W",
+                "name": "Wins",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0ede0dc3852443000003",
+                "key": "losses",
+                "abbrev": "L",
+                "name": "Losses",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0ede0dc3852443000004",
+                "key": "ties",
+                "abbrev": "T",
+                "name": "Ties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0ede0dc385244300000a",
+                "key": "points_per_game",
+                "abbrev": "PPG",
+                "name": "Points Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000e",
+                "key": "tsgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a6000001",
+        "key": "football_passing",
+        "short_name": "Passing",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a6000002",
+                "key": "pscomp",
+                "abbrev": "Comp",
+                "name": "Completions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000003",
+                "key": "psatt",
+                "abbrev": "Att",
+                "name": "Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000004",
+                "key": "pspct",
+                "abbrev": "Comp %",
+                "name": "Completion Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000005",
+                "key": "psyds",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000006",
+                "key": "psavgyds",
+                "abbrev": "Yds/Att",
+                "name": "Average Yards",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000007",
+                "key": "pstd",
+                "abbrev": "TD",
+                "name": "Touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000008",
+                "key": "psint",
+                "abbrev": "Int",
+                "name": "Interceptions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000009",
+                "key": "psrat",
+                "abbrev": "Rate",
+                "name": "QB Rating",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600000a",
+                "key": "pssck",
+                "abbrev": "Sck",
+                "name": "Sacks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600000b",
+                "key": "pssckyd",
+                "abbrev": "SckY",
+                "name": "Yards Lost Due to Sacks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0ede0dc3852443000007",
+                "key": "psypg",
+                "abbrev": "Pass YPG",
+                "name": "Pass Yards Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000001",
+                "key": "psgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000002",
+                "key": "ps2pc",
+                "abbrev": "2PM",
+                "name": "Two-Point Conversions Made",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a600000c",
+        "key": "football_rushing",
+        "short_name": "Rushing",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a600000d",
+                "key": "rshatt",
+                "abbrev": "Att",
+                "name": "Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600000e",
+                "key": "rshyd",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600000f",
+                "key": "rshavg",
+                "abbrev": "Yds/Att",
+                "name": "Average Yards",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000010",
+                "key": "rshtd",
+                "abbrev": "TD",
+                "name": "Touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000011",
+                "key": "rshfum",
+                "abbrev": "FUM",
+                "name": "Fumbles Lost",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0ede0dc3852443000006",
+                "key": "rshypg",
+                "abbrev": "Rush YPG",
+                "name": "Rushing Yards Per Game",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000003",
+                "key": "rshgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000004",
+                "key": "rsh2pc",
+                "abbrev": "2PM",
+                "name": "Two-Point Conversions Made",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a6000012",
+        "key": "football_receiving",
+        "short_name": "Receiving",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a6000013",
+                "key": "rcrec",
+                "abbrev": "Rec",
+                "name": "Receptions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000014",
+                "key": "rcyd",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000015",
+                "key": "rcavg",
+                "abbrev": "Yds/Rec",
+                "name": "Average Yards",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000016",
+                "key": "rctd",
+                "abbrev": "TD",
+                "name": "Touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000005",
+                "key": "rcgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000006",
+                "key": "rc2pc",
+                "abbrev": "2PM",
+                "name": "Two-Point Conversions Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000007",
+                "key": "rcyac",
+                "abbrev": "YAC",
+                "name": "Yards after catch",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000008",
+                "key": "rctar",
+                "abbrev": "Tar",
+                "name": "Targets",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b000009",
+                "key": "rcypg",
+                "abbrev": "YPG",
+                "name": "Yards per game",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a6000017",
+        "key": "football_defensive",
+        "short_name": "Defensive",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a6000018",
+                "key": "deftck",
+                "abbrev": "Tck",
+                "name": "Solo Tackles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000019",
+                "key": "defsck",
+                "abbrev": "Sck",
+                "name": "Sacks",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600001a",
+                "key": "deffum",
+                "abbrev": "Fum",
+                "name": "Fumble Recoveries",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600001b",
+                "key": "defint",
+                "abbrev": "Int",
+                "name": "Interceptions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000008",
+                "key": "defatck",
+                "abbrev": "ATck",
+                "name": "Assisted Tackles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726efac0759f76bd00000d",
+                "key": "deffcfm",
+                "abbrev": "FF",
+                "name": "Forced Fumbles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726efac0759f76bd00000e",
+                "key": "defblkck",
+                "abbrev": "BK",
+                "name": "Blocked Kicks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000002",
+                "key": "defsfty",
+                "abbrev": "Sfty",
+                "name": "Safeties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000003",
+                "key": "defttck",
+                "abbrev": "TTck",
+                "name": "Total Tackles",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000004",
+                "key": "deftdint",
+                "abbrev": "IntTD",
+                "name": "Interceptions returned for touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000005",
+                "key": "deftdfmb",
+                "abbrev": "FmbTD",
+                "name": "Fumbles recovered for touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000006",
+                "key": "deftdtot",
+                "abbrev": "TotTD",
+                "name": "Total defensive touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e8c62acc0759f52f4000007",
+                "key": "defgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "502d4ebd1d7edc7014000001",
+                "key": "defpdef",
+                "abbrev": "PDef",
+                "name": "Passes Defended",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5050d96c1d7edc528c000002",
+                "key": "deftfl",
+                "abbrev": "TFL",
+                "name": "Tackles For Loss",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5050d96c1d7edc528c000003",
+                "key": "defbktd",
+                "abbrev": "BKTD",
+                "name": "Blocked Kick/Punt Return TD",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a600001c",
+        "key": "football_punt_returning",
+        "short_name": "Punt Returning",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a600001d",
+                "key": "prrtrn",
+                "abbrev": "Returns",
+                "name": "Returns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600001e",
+                "key": "prfc",
+                "abbrev": "FC",
+                "name": "Fair Catches",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600001f",
+                "key": "pryds",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000020",
+                "key": "prypr",
+                "abbrev": "Yds/Ret",
+                "name": "Yards/Return",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000021",
+                "key": "prtd",
+                "abbrev": "TD",
+                "name": "Touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000a",
+                "key": "prgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a6000022",
+        "key": "football_kick_returning",
+        "short_name": "Kick Returning",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a6000023",
+                "key": "krrtrn",
+                "abbrev": "Returns",
+                "name": "Returns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000024",
+                "key": "kryds",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000025",
+                "key": "krypr",
+                "abbrev": "Yds/Ret",
+                "name": "Yards/Return",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000026",
+                "key": "krtd",
+                "abbrev": "TD",
+                "name": "Touchdowns",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000b",
+                "key": "krgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a6000027",
+        "key": "football_punting",
+        "short_name": "Punting",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a6000028",
+                "key": "ptpunts",
+                "abbrev": "Punts",
+                "name": "Punts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000029",
+                "key": "ptyds",
+                "abbrev": "Yds",
+                "name": "Yards",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600002a",
+                "key": "yds_per_punt",
+                "abbrev": "Avg",
+                "name": "Yards Per Punt",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600002b",
+                "key": "pttb",
+                "abbrev": "Touchbacks",
+                "name": "Touchbacks",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600002c",
+                "key": "ptin20",
+                "abbrev": "In 20",
+                "name": "Punts Not Returned Past 20 yard line",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600002d",
+                "key": "ptblk",
+                "abbrev": "Blcks",
+                "name": "Blocked Punts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000c",
+                "key": "ptgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a600002e",
+        "key": "football_kicking",
+        "short_name": "Kicking",
+        "ngin_sport_id": 11,
+        "team_only": false,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a600002f",
+                "key": "kcatt1_19",
+                "abbrev": "1-19A",
+                "name": "1-19 Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000030",
+                "key": "kcmd1_19",
+                "abbrev": "1-19M",
+                "name": "1-19 Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000031",
+                "key": "kcatt20_29",
+                "abbrev": "20-29A",
+                "name": "20-29 Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000032",
+                "key": "kcmd20_29",
+                "abbrev": "20-29M",
+                "name": "20-29 Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000033",
+                "key": "kcatt30_39",
+                "abbrev": "30-39A",
+                "name": "30-39 Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000034",
+                "key": "kcmd30_39",
+                "abbrev": "30-39M",
+                "name": "30-39 Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000035",
+                "key": "kcatt40_49",
+                "abbrev": "40-49A",
+                "name": "40-49 Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000036",
+                "key": "kcmd40_49",
+                "abbrev": "40-49M",
+                "name": "40-49 Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000037",
+                "key": "kcatt50",
+                "abbrev": "50+ A",
+                "name": "50+ Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000038",
+                "key": "kcmd50",
+                "abbrev": "50+ M",
+                "name": "50+ Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000001",
+                "key": "kcfgatt",
+                "abbrev": "FGA",
+                "name": "Field Goal Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000002",
+                "key": "kcfgmd",
+                "abbrev": "FGM",
+                "name": "Field Goals Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000003",
+                "key": "kcfgpct",
+                "abbrev": "FG Pct",
+                "name": "Field Goal Pct",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000004",
+                "key": "kcxpatt",
+                "abbrev": "XPA",
+                "name": "Extra Point Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000005",
+                "key": "kcxpmd",
+                "abbrev": "XPM",
+                "name": "Extra Points Made",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e726ef8c0759f76bd000006",
+                "key": "kcxppct",
+                "abbrev": "XP Pct",
+                "name": "Extra Point Pct",
+                "formatter": "float_1",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000d",
+                "key": "kcgames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5033e8241d7edc14be000001",
+                "key": "kcrg",
+                "abbrev": "Rouge",
+                "name": "Rouge",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    },
+    {
+        "id": "4e3a0df30dc38523a600003b",
+        "key": "football_team_offense",
+        "short_name": "Team Stats",
+        "ngin_sport_id": 11,
+        "team_only": true,
+        "scoring_module": false,
+        "stat_types": [
+            {
+                "id": "4e3a0df30dc38523a600003c",
+                "key": "tmo1d",
+                "abbrev": "1st Downs",
+                "name": "First Downs",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600003d",
+                "key": "tmo3da",
+                "abbrev": "3rd Down Att",
+                "name": "Third Down Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600003e",
+                "key": "tmo3dc",
+                "abbrev": "3rd Down Conv",
+                "name": "Third Down Conversions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a600003f",
+                "key": "tmo4da",
+                "abbrev": "4th Down Att",
+                "name": "Fourth Down Attempts",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000040",
+                "key": "tmo4dc",
+                "abbrev": "4th Down Conv",
+                "name": "Fourth Down Conversions",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000041",
+                "key": "tmotop",
+                "abbrev": "Time of Pos",
+                "name": "Time of Possession",
+                "formatter": "minutes_and_seconds",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000042",
+                "key": "tmo3dpct",
+                "abbrev": "3rd Down Conv %",
+                "name": "Third Down Conversions Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4e3a0df30dc38523a6000043",
+                "key": "tmo4dpct",
+                "abbrev": "4th Down Conv %",
+                "name": "Fourth Down Conversions Percentage",
+                "formatter": "percentage",
+                "score_value": null
+            },
+            {
+                "id": "4eb9554cc0759f471b00000f",
+                "key": "togames",
+                "abbrev": "G",
+                "name": "Games played",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da000001",
+                "key": "tmotot",
+                "abbrev": "TOT YRD",
+                "name": "Total Offense",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da00000b",
+                "key": "tmopen",
+                "abbrev": "PEN",
+                "name": "Penalties",
+                "formatter": "integer",
+                "score_value": null
+            },
+            {
+                "id": "5011b9e41d7edc39da00000c",
+                "key": "tmopyd",
+                "abbrev": "PEN YRD",
+                "name": "Penalty Yards",
+                "formatter": "integer",
+                "score_value": null
+            }
+        ]
+    }
+]
