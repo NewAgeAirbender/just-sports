@@ -180,6 +180,30 @@ interface SportingEventInterface {
   eventOrganizers: [Organization!]!
 }
 
+type GameEvent {
+  id: ID!
+  date: DateTime!
+  teams: [Team!]!
+  location: String
+  homeTeam: Team
+  homeTeamScoresbyInterval: [Int]!
+  awayTeams: Team
+  awayTeamScoresbyInterval: [Int]!
+  overtime: Boolean
+  sport: Sport!
+  gameType: GAME_TYPE
+
+  status: EVENT_STATUS
+
+  # Not sure since set in Wordpress
+  paywalled: Boolean
+  livestream: Int
+
+  scoreByInterval: GameScore
+
+  eventOrganizers: [Organization!]!
+}
+
 enum EVENT_STATUS {
   LIVE
   UPCOMING
@@ -812,72 +836,6 @@ type GeneralStats {
     errors: Int
     setsPlayed: Int
 }
-
-interface ScoreByInterval {
-  wins: Int
-  losses: Int
-  ties: Int
-  overtimePoints: Int
-  totalPoints: Int
-}
-
-# Soccer & Basketball
-type TwoIntervals implements ScoreByInterval {
-  wins: Int!
-  losses: Int!
-  ties: Int!
-  overtimePoints: Int
-  totalPoints: Int!
-
-  firstPoints: Int!
-  secondPoints: Int!
-}
-
-# Hockey
-type ThreeIntervals implements ScoreByInterval {
-  wins: Int!
-  losses: Int!
-  ties: Int!
-  overtimePoints: Int
-  totalPoints: Int!
-
-  firstPoints: Int!
-  secondPoints: Int!
-  thirdPoints: Int!
-}
-
-# Football, Lacrosse, & Volleyball
-type FourIntervals implements ScoreByInterval {
-  wins: Int!
-  losses: Int!
-  ties: Int!
-  overtimePoints: Int
-  totalPoints: Int!
-
-  firstPoints: Int!
-  secondPoints: Int!
-  thirdPoints: Int!
-  fourthPoints: Int!
-}
-
-# Base/Softball up to 7 but can be done after 5
-type SevenIntervals implements ScoreByInterval {
-  wins: Int!
-  losses: Int!
-  ties: Int!
-  overtimePoints: Int
-  totalPoints: Int!
-
-  firstPoints: Int!
-  secondPoints: Int!
-  thirdPoints: Int!
-  fourthPoints: Int!
-  fifthPoints: Int!
-  sixthPoints: Int
-  seventhPoints: Int
-}
-
-union GameScore = TwoIntervals | ThreeIntervals | FourIntervals | SevenIntervals
 `;
 
 // Just need to pass resolvers in with typeDefs when that's ready
