@@ -1,0 +1,64 @@
+{
+    "id": 74925387,
+    "roster_id": 9412771,
+    "jersey_number": "1",
+    "updated_on": "2025-03-08T13:08:12-08:00",
+    "created_on": "2024-11-15T12:41:19-08:00",
+    "content_node_id": 106440884,
+    "image_id": 206777767,
+    "active_status": true,
+    "info": [
+        {
+            "name": "Height",
+            "value": "6'0\""
+        },
+        {
+            "name": "Weight",
+            "value": "183"
+        },
+        {
+            "name": "Grade",
+            "value": "12"
+        }
+    ],
+    "first_name": "Carson",
+    "last_name": "Hauger",
+    "roster_type": "player",
+    "title": null,
+    "list_position": 1,
+    "inactive_info": {},
+    "status": "active",
+    "headshot_image_key": null,
+    "roster_persona_id": null,
+    "positions": [
+        {
+            "id": 3,
+            "name": "Goalie",
+            "abbreviation": "G",
+            "sport_id": 1,
+            "position": 3,
+            "updated_on": "2007-03-07T13:39:55-08:00",
+            "created_on": null
+        }
+    ],
+    "persona_id": 109932787,
+    "thumbnails": {
+        "extra_large": "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_extra_large.JPEG",
+        "large": "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_large.JPEG",
+        "medium": "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_medium.JPEG",
+        "small": "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_small.JPEG"
+    },
+    "url_string": "https://www.mnhockeyhub.com/roster_players/74925387",
+    "team_name": "Lakeville South",
+    "division_name": "South Suburban",
+    "league_name": "MSHSL",
+    "player_image_thumbnails": [
+        "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_extra_large.JPEG",
+        "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_large.JPEG",
+        "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_medium.JPEG",
+        "https://cdn1.sportngin.com/attachments/roster_player_info/d2a2-206777767/Hauger_small.JPEG"
+    ],
+    "effective_status": "active",
+    "invite_status": "uninvited",
+    "invite_id": null
+}
