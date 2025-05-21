@@ -1,0 +1,49 @@
+interface Sport {
+  name: string
+  teams: [Team!]!
+  articles: [Article!]!
+}
+
+type Football implements Sport {
+  name: string
+  teams: [FootballTeam!]!
+  articles: [Article!]!
+}
+
+interface FootballStats {
+  tackles: number
+}
+
+interface Team {
+  name: string
+}
+
+type FootballTeam implements Team & FootballStats {
+  id: string
+  name: string
+  tackles: number
+
+  games: [FootballGame!]!
+}
+
+type FootballGame implements Event {
+  teamStats: [FootballTeamGameStats!]!
+  playerStats: [FootballPlayerGameStats!]!
+}
+
+type FootballTeamGameStats implements FootballStats {
+  team: FootballTeam
+  game: FootballGame
+  tackles: number
+}
+
+type FootballPlayerGameStats implements FootballStats {
+  player: FootballPlayer
+  game: FootballGame
+  tackles: number
+  team: FootballTeam
+}
+
+interface Athlete {
+  name: string
+}
